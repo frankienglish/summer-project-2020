@@ -9,6 +9,12 @@ import Cart from './components/pages/Cart';
 import Categories from './components/pages/Categories';
 import Sell from './components/pages/Sell';
 import Search from './components/Search';
+import Clothing from './components/pages/SubCategories/Clothing';
+import Electronics from './components/pages/SubCategories/Electronics';
+import Toys from './components/pages/SubCategories/Toys';
+import Outdoors from './components/pages/SubCategories/Outdoors';
+import Fitness from './components/pages/SubCategories/Fitness';
+import Entertainment from './components/pages/SubCategories/Entertainment';
 
 
 // Router links the different pages together using paths
@@ -33,6 +39,12 @@ class App extends Component{
             <Route path="/sell" component={Sell} />
             <Route path="/account" component={Account} />
             <Route path="/cart" component={Cart} />
+            <Route path="/categories/clothing" component={Clothing} />
+            <Route path="/categories/electronics" component={Electronics} />
+            <Route path="/categories/toys" component={Toys} />
+            <Route path="/categories/outdoors" component={Outdoors} />
+            <Route path="/categories/fitness" component={Fitness} />
+            <Route path="/categories/entertainment" component={Entertainment} />
           </div>
         </div>
       </Router>
